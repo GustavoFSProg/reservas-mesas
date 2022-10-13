@@ -1,5 +1,6 @@
 import mesa from './assets/mesa.jpeg'
 import './App.css'
+import { Link } from 'react-router-dom'
 
 function App() {
 
@@ -8,8 +9,13 @@ function App() {
       <h1>Sistema de reservas:</h1>
     <div className="App">
 
-      <div>
-        
+        <div>
+
+          <Link to="/" style={{
+            color: 'black',
+
+          }} onClick={() => alert("Mesa 1 Reservada")}>
+
         <img src={mesa} className="logo-mesa" alt="React logo" />
           <p>
             <h2>1</h2>
@@ -20,10 +26,15 @@ function App() {
           <br />
           Telefone: 6969-66696
 
-        </p>
+            </p>
+          </Link>
+
       </div>
       <div>
+          <Link to="/" style={{
+            color: 'black',
 
+          }} onClick={() => alert("Mesa 2 Reservada")}>
         <img src={mesa} className="logo-mesa" alt="React logo" />
           <p>
             <h2>2</h2>
@@ -34,13 +45,19 @@ function App() {
           <br />
           Telefone: 6969-66696
 
-        </p>
+            </p>
+          </Link>
+
       </div>
       <div>
+          <Link to="/" style={{
+            color: 'black',
 
+          }} onClick={() => alert("Mesa 3 Reservada")}>
         <img src={mesa} className="logo-mesa" alt="React logo" />
 
           <p>
+
             <h2>3</h2>
           RESERVA:
           <br />
@@ -48,9 +65,15 @@ function App() {
           <br />
           Telefone: 6969-66696
 
-        </p>
+            </p>
+          </Link>
+
       </div>
-      <div>
+        <div>
+          <Link to="/" style={{
+            color: 'black',
+
+          }} onClick={() => alert("Mesa 4 Reservada")}>
 
         <img src={mesa} className="logo-mesa" alt="React logo" />
 
@@ -62,7 +85,9 @@ function App() {
           <br />
           Telefone: 6969-66696
 
-        </p>
+            </p>
+          </Link>
+
       </div>
       <div>
 
